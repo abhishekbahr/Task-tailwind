@@ -1,29 +1,22 @@
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import AboutPage from './components/About/AboutPage'
-import Interested from './components/Interested/Interested'
-import ComfortLevel from './components/ComfortLevel/ComfortLevel.jsx'
-import RighPlacePage from './components/AnotherPages/RighPlacePage.jsx'
-import OnYourWayPage from './components/AnotherPages/OnYourWayPage.jsx'
+import Stepper from './components/Stepper/Stepper'
+import PathPage from './components/AnotherPages/PathPage'
+import ProcessingPage from './components/AnotherPages/ProcessingPage'
 
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<AboutPage />
+    element:<Stepper />
   },
   {
-    path:"/interest",
-    element:<Interested />
+    path:"/searching",
+    element:<ProcessingPage />
   },
   {
-    path:"/comfort",
-    element:<ComfortLevel />
+    path:"/learningPath",
+    element:<PathPage />
   },
-  {
-    path:'/test',
-    element:<RighPlacePage/>
-  }
 ])
 
 function App() {

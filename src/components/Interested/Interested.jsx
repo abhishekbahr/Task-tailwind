@@ -19,7 +19,7 @@ const Interested = () => {
             <div className="flex flex-col gap-6 ">
                 {options.map((option) => {
                     return (
-                            <button key={option.id} className=' rounded-lg cursor-pointer border-2 shadow-sm border-gray-200 flex flex-row  max-sm:items-center gap-6 pl-6 pr-56 py-2 max-sm:pr-8 max-sm:pl-2 max-sm:grid-cols-2 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-200 ...'>
+                            <button key={option.id} className=' rounded-lg cursor-pointer border-2 shadow-sm border-gray-200 flex flex-row  max-sm:items-center gap-6 pl-6 pr-56 py-2 max-sm:pr-8 max-sm:pl-2 max-sm:grid-cols-2 hover:scale-105 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-200 ...'>
                                 <div className="max-sm:w-1/2">
                                     <img className="w-10  max-sm:w-28 mix-blend-multiply" src={option.icon} alt="icon_image" />
                                 </div>
